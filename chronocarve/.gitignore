@@ -1,0 +1,62 @@
+# ==============================================================================
+# ChronoCarve .gitignore
+# ==============================================================================
+
+# Python Bytecode & Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+.pytest_cache/
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+
+# C / C++ Build Artifacts & Binaries
+build/
+build_*/
+cmake-build-*/
+bin/
+out/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+*.o
+*.obj
+*.lib
+*.a
+*.dll
+*.so
+*.dylib
+*.exe
+
+# ChronoCarve Runtime Generated Files
+# Generated reframed images, seam overlays, and energy heatmaps
+outputs/*
+!outputs/.gitkeep
+
+# User uploaded dynamic images (preserve bundled sample landscapes)
+uploads/upload_*
+!uploads/.gitkeep
+!uploads/sample_*.jpg
+
+# IDE & Editor Configuration
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+.idea/
+*.swp
+*.swo
+*~
+
+# Operating System Temporary Files
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.log
+scratch/
